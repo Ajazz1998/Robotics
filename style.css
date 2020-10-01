@@ -228,9 +228,30 @@ nav {
         color: #777;
         line-height: 1.4; }
 
-        .featureCard::after{
-          
+        .featureCard{
+          position: relative;
+          transition: 600ms;
+          -webkit-transition: 600ms;
+          -moz-transition: 600ms;
+          -ms-transition: 600ms;
+          -o-transition: 600ms;
         }
+
+        .featureCard:hover::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: linear-gradient(0deg, #828fff 0%, #d496ff 100%);
+          opacity: .6;
+          border-radius: 10px;
+             -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+     }
 
 
 .sponsors {
